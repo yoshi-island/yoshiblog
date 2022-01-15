@@ -12,16 +12,20 @@
         <section <?php post_class('post-list'); ?>>
             <!-- アイキャッチ画像 -->
             <?php if (has_post_thumbnail()):  ?>
-                <?php the_post_thumbnail(array(80, 80)); ?>
+                <a href="<?php the_permalink(); ?>">
+                    <?php the_post_thumbnail(array(80, 80)); ?>
+                </a>
             <!-- アイキャッチ画像指定無ければランダム表示 -->
             <?php else : ?>
-                <img 
-                    width="80"
-                    height="80"
-                    src="<?php echo get_template_directory_uri(); ?>/images/<?php echo get_random_image(); ?>"
-                    class="attachment-80x80 size-80x80 wp-post-image"
-                    alt=""
-                >
+                <a href="<?php the_permalink(); ?>">
+                    <img 
+                        width="80"
+                        height="80"
+                        src="<?php echo get_template_directory_uri(); ?>/images/<?php echo get_random_image(); ?>"
+                        class="attachment-80x80 size-80x80 wp-post-image random-post-image"
+                        alt=""
+                    >
+                </a>
             <?php endif; ?>
             <div class="blog-posts-info-wrapper">
                 <!-- 投稿日付 -->
