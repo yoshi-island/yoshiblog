@@ -2,7 +2,7 @@
 
 <?php
     if( is_front_page() ){
-        query_posts('posts_per_page=5');
+        query_posts('posts_per_page=10');
     }
 ?>
 
