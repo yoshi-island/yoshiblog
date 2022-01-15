@@ -42,6 +42,11 @@ add_theme_support( 'post-thumbnails' );
 /**
  * タイトル出力機能を有効化
  */
+function wp_document_title_separator( $separator ) {
+  $separator = '|';
+  return $separator;
+}
+add_filter( 'document_title_separator', 'wp_document_title_separator' );
 add_theme_support( 'title-tag' );
 
 /**
