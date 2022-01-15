@@ -399,6 +399,14 @@ article .syntaxhighlighter table td {
     }
 }
 
+.single-page p {
+    margin-bottom: 10px;
+}
+.single-page b {
+    background:rgba(0, 0, 0, 0)
+    linear-gradient(transparent 60%, #ffffbc 0%) repeat scroll 0 0;
+}
+
 
 /* related-posts, new-posts
    ========================================================================== */
