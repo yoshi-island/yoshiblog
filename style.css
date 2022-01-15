@@ -550,7 +550,7 @@ footer {
       width: 25px;
       height: 2px;
       right: 0;
-      background-color: white;
+      background-color: #212121;
       transition: all 0.5s;
     }
     
@@ -567,10 +567,6 @@ footer {
     }
     
     /*ハンバーガーがクリックされたら*/
-    .open .hamburger__line {
-        background-color: #212121;
-    }
-    
     .open .hamburger__line--1 {
       transform: rotate(-45deg);
       top: 11px;
