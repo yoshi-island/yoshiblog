@@ -37,8 +37,12 @@ register_sidebar( array(
 /**
  * アイキャッチ画像の機能を有効化
  */
-
 add_theme_support( 'post-thumbnails' );
+
+/**
+ * タイトル出力機能を有効化
+ */
+add_theme_support( 'title-tag' );
 
 /**
  * 画像をランダムに呼び出す関数
