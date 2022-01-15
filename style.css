@@ -407,6 +407,13 @@ article .syntaxhighlighter table td {
     linear-gradient(transparent 60%, #ffffbc 0%) repeat scroll 0 0;
 }
 
+.box1 {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    background: #ebfffd;
+    border: dashed 2px #009688;/*点線*/
+}
+
 
 /* related-posts, new-posts
    ========================================================================== */
