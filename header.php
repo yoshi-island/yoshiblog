@@ -28,5 +28,4 @@
         </a>
         <?php get_template_part('modules/headermenu'); ?>
         <?php if( function_exists('the_ad_placement') ) { the_ad_placement('manual'); }; ?>
-    <?php get_template_part('modules/categories'); ?>
     </header>
